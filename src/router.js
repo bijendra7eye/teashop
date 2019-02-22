@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import Allitems from "./views/Allitems.vue";
+import Allcustomer from "./views/Allcustomer.vue";
+
 
 Vue.use(Router);
 
@@ -10,6 +13,16 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/allitems",
+      name: "allitems",
+      component: Allitems
+    },
+    {
+      path: "/allcustomer",
+      name: "allcustomer",
+      component: Allcustomer
     },
     {
       path: "/about",
